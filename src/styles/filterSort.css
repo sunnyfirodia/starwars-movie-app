@@ -1,0 +1,58 @@
+.filter-sort-input-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.filter-sort-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-sort-select {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  width: 20%;
+}
+
+.filter-sort-input-container {
+  position: relative;
+  flex: 1;
+}
+
+.filter-sort-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.filter-sort-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .filter-sort-controls {
+    flex-direction: column;
+  }
+
+  .filter-sort-select {
+    width: 100%;
+  }
+  .filter-sort-input-container {
+    max-width: 95%;
+  }
+
+  .filter-sort-input {
+    max-width: 100%;
+  }
+}

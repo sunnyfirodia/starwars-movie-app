@@ -1,0 +1,89 @@
+.star-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.star-full {
+  color: #ffc107;
+  font-size: 1.25rem;
+}
+
+.star-half {
+  color: #ffc107;
+  font-size: 1.25rem;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.star-empty {
+  color: #e0e0e0;
+  font-size: 1.25rem;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.stars {
+  position: absolute;
+  top: -1.5rem;
+  text-align: right;
+  font-size: 1rem;
+  color: #f5a623;
+}
+
+.rating-chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 16px;
+  justify-content: center;
+}
+
+.rating-chip {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #007aff;
+  color: #007aff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rating-chip:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 122, 255, 0.2);
+}
+
+.rating-chip span {
+  margin-left: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .rating-chip {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .star-full,
+  .star-half,
+  .star-empty {
+    font-size: 1rem;
+  }
+
+  .rating-chip {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
